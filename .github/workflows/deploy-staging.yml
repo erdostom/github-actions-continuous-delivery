@@ -6,4 +6,5 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-lates
+    if: contains(github.event.pull_request.labels.*.name, 'stage')
